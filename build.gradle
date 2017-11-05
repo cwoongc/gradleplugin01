@@ -4,8 +4,8 @@ apply plugin: GreetingPlugin //사용자정의 플러그인 적용
 //greeting 이라는 확장객체를 통한 설정수단
 greeting { //GreetingPlugin에 의해 추가된 greeting 블록
     // message("HI", "world")
-    setGreeting "Hello"
-    setTarget "World"
+    greeting "Hello"
+    target "World" //extension 객체에 setter를 설정하면 setter메소드 명대신 property명을 메소드처럼 사용해도 정상적으로 동작한다.
 
 }
 
